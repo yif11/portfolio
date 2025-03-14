@@ -1,0 +1,99 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Card from "../components/Card.astro";
+import ProfileModel from "../components/ProfileModel";
+import {
+	Themes,
+	CardThemes,
+	HeaderThemes,
+	FooterThemes,
+} from "../components/Themes";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { IconBlockquote, IconBrandGithub } from "@tabler/icons-react";
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<Themes>
+		<body class="">
+			<HeaderThemes>
+				<Header />
+			</HeaderThemes>
+			<main class="max-w-5xl mx-auto p-6 space-y-6 w-5xl">
+				<CardThemes>
+					<div class="flex flex-col shadow-md rounded-lg p-6">
+						<h2 class="text-4xl font-semibold">I am yif11.</h2>
+
+						<div
+							class="flex justify-center items-center aspect-[1/1] md:aspect-[3/1]"
+						>
+							<ProfileModel client:only="react" />
+						</div>
+						<div class="flex gap-4 mt-4">
+							<a
+								href="https://github.com/yif11"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<IconBrandGithub
+									size={36}
+									className="text-black hover:text-gray-600"
+								/>
+							</a>
+							<a
+								href="https://qiita.com/yif11"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<IconBlockquote
+									size={36}
+									className="text-black hover:text-gray-600"
+								/>
+							</a>
+						</div>
+						<div class="mt-2">
+							<p>豊橋技術科学大学 情報・知能工学専攻</p>
+							<p>修士1年</p>
+						</div>
+					</div>
+				</CardThemes>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<CardThemes>
+						<Card
+							title="Interests"
+							content={[
+								"NLP (research)",
+								"Web",
+								"WebGL / AR",
+								"AI / ML",
+								"Image Processing",
+								"OPOS",
+							]}
+						/>
+					</CardThemes>
+
+					<CardThemes>
+						<Card
+							title="Skills"
+							content={[
+								"HTML / CSS / JavaScript / TypeScript",
+								"Vite / Astro / React / Node.js / Express.js",
+								"Tailwind CSS / Materialize",
+								"Python (ML, Backend Development)",
+								"C",
+							]}
+						/>
+					</CardThemes>
+				</div>
+			</main>
+			<FooterThemes>
+				<Footer />
+			</FooterThemes>
+		</body>
+	</Themes>
+</html>
