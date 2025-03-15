@@ -2,7 +2,7 @@
 title: 'WebGL & WebARアプリ開発 (インターン)'
 description: 'WebGL & WebARアプリ開発 (インターン)についてです．'
 pubDate: 'Mar 15 2025'
-heroImage: '/portfolio/images/sample.jpg'
+heroImage: '/portfolio/images/internship.png'
 ---
 
 ## 内容

@@ -2,7 +2,7 @@
 title: 'Ocean'
 description: 'Oceanについてです．'
 pubDate: 'Mar 15 2025'
-heroImage: '/portfolio/images/sample.jpg'
+heroImage: '/portfolio/images/ocean.png'
 ---
 
 ## 概要

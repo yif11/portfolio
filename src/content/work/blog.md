@@ -2,7 +2,7 @@
 title: 'ブログによるアウトプット'
 description: 'ブログによるアウトプットについてです．'
 pubDate: 'Mar 15 2025'
-heroImage: '/portfolio/images/sample.jpg'
+heroImage: '/portfolio/images/blog.png'
 ---
 
 ## 概要

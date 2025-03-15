@@ -2,7 +2,7 @@
 title: '研究'
 description: '研究についてです．'
 pubDate: 'Mar 15 2025'
-heroImage: '/portfolio/images/sample.jpg'
+heroImage: '/portfolio/images/research.png'
 ---
 
 ## 研究内容
